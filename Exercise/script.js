@@ -16,7 +16,10 @@ words01.map((word) => {
   if(word.length > 8) {
     span.innerHTML = word;
     console.log(span);
-    p.before(span);
+    console.log(word);
+
+    // ↓ここをどうにかする
+    p.innerHTML.replace(word, span);
   }
 });
 
